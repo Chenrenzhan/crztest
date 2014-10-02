@@ -11,7 +11,7 @@ import time
 import datetime
 
 def send_mail(to_addrs, subject, content):
-    '''''
+    '''
     to_addrs: 发送给谁
     subject: 主题
     context: 内容
