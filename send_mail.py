@@ -1,5 +1,5 @@
-
-
+#!/usr/bin/env python  
+#-*- coding: utf-8 -*-
 
 import smtplib
 import sys
@@ -10,10 +10,13 @@ from email.mime.base import MIMEBase
 import time
 import datetime
 
-# to_addrs: 发送给谁 
-# subject: 主题
-# context: 内容
 def send_mail(to_addrs, subject, content):
+    '''
+    to_addrs: 发送给谁
+    subject: 主题
+    context: 内容
+    send_mail("xxx@126.com","sub","context")
+    ''' 
     host = 'smtp.gmail.com'
     post = 25
     
