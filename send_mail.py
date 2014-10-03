@@ -36,8 +36,8 @@ def send_mail(to_addrs, subject, content):
     msg['To'] = to_addrs
     msg['Subject'] = subject
     #msg['Date'] = formatdate(localtime=True) #不止为何设置不了时间
-    #server.sendmail('dengzuoheng@gmail.com', to_addrs, msg.as_string())
-    server.send_message(msg, 'dengzuoheng@gmail.com', to_addrs) #发送Message实例
+    server.sendmail('dengzuoheng@gmail.com', to_addrs, msg.as_string())
+    #server.send_message(msg, 'dengzuoheng@gmail.com', to_addrs) #发送Message实例
     server.quit()
     
     print('send mail success!')
